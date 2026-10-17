@@ -156,7 +156,9 @@ bool getWifiEnableStatusFromNVS(void) {
         wifiStatus = 1;
     }
 
-    return wifiStatus;
+    //kka: quickfix
+    //return wifiStatus;
+    return 1;
 }
 
 // Writes to NVS whether WiFi should be activated
