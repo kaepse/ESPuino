@@ -39,6 +39,7 @@
 	#define FTP_ENABLE                      // Enables FTP-server; DON'T FORGET TO ACTIVATE AFTER BOOT BY PRESSING PAUSE + NEXT-BUTTONS (IN PARALLEL)!
 	#define NEOPIXEL_ENABLE                 // Configure LED count in the web interface under General -> LED
 	#define LANGUAGE DE                     // DE = deutsch; EN = english: FR = french
+	// Enable only when a wired headphone PCB with detection is connected. On HAL 7, enabling it without that hardware can prevent normal startup, including SD-card mounting.
 	//#define HEADPHONE_ADJUST_ENABLE         // Used to adjust (lower) volume for optional headphone-pcb (refer maxVolumeSpeaker / maxVolumeHeadphone) and to enable stereo (headphones are always stereo, even if mono-playback is enabled via GUI)
 	#define SHUTDOWN_IF_SD_BOOT_FAILS       // Will put ESP to deepsleep if boot fails due to SD. Really recommend this if there's in battery-mode no other way to restart ESP! Interval adjustable via deepsleepTimeAfterBootFails.
 	#define MEASURE_BATTERY_VOLTAGE         // Enables battery-measurement via GPIO (ADC) and voltage-divider
