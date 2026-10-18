@@ -19,7 +19,7 @@
 	HAL 4: Wemos Lolin D32 pro                  => settings-lolin_D32_pro.h
 	HAL 5: Lilygo T8 (V1.7)                     => settings-ttgo_t8.h
 	HAL 6: ESPuino complete                     => settings-complete.h
-	HAL 7: Lolin D32 pro SDMMC Port-Expander    => settings-lolin_d32_pro_sdmmc_pe.h
+	HAL 7: Lolin D32 pro SDMMC Port-Expander    => settings-lolin_d32_pro_sdmmc_pe.h (kka: MuhBox32)
 	HAL 99: custom                              => settings-custom.h
 	*/
 	#ifndef HAL             // Will be set by platformio.ini. There's no need to adjust this manually right here
@@ -37,7 +37,7 @@
 	#define MDNS_ENABLE                     // When enabled, you don't have to handle with ESPuino's IP-address. If hostname is set to "ESPuino", you can reach it via ESPuino.local
 	#define MQTT_ENABLE                     // Make sure to configure mqtt-server and (optionally) username+pwd
 	#define FTP_ENABLE                      // Enables FTP-server; DON'T FORGET TO ACTIVATE AFTER BOOT BY PRESSING PAUSE + NEXT-BUTTONS (IN PARALLEL)!
-	#define NEOPIXEL_ENABLE                 // Don't forget configuration of NUM_LEDS if enabled
+	#define NEOPIXEL_ENABLE                 // Configure LED count in the web interface under General -> LED
 	#define LANGUAGE DE                     // DE = deutsch; EN = english: FR = french
 	#define HEADPHONE_ADJUST_ENABLE         // Used to adjust (lower) volume for optional headphone-pcb (refer maxVolumeSpeaker / maxVolumeHeadphone) and to enable stereo (headphones are always stereo, even if mono-playback is enabled via GUI)
 	#define SHUTDOWN_IF_SD_BOOT_FAILS       // Will put ESP to deepsleep if boot fails due to SD. Really recommend this if there's in battery-mode no other way to restart ESP! Interval adjustable via deepsleepTimeAfterBootFails.
